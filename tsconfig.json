@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                      // JavaScript version to compile to
+    "module": "ESNext",                   // Module system used in output
+    "jsx": "react-jsx",                   // Enable JSX syntax support for React
+    "strict": true,                       // Enable all strict type-checking options
+    "esModuleInterop": true,              // Enable interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                 // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file casing
+    "resolveJsonModule": true,            // Allow importing .json files
+    "isolatedModules": true,              // Ensure each file can be transpiled without requiring type information
+    "moduleResolution": "node",           // Use Node.js-style module resolution
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "noImplicitAny": true,                // Raise an error on implicit 'any' types
+    "noUnusedLocals": true,               // Report errors on unused local variables
+    "noUnusedParameters": true,           // Report errors on unused function parameters
+    "outDir": "./dist",                   // Specify the output directory
+    "baseUrl": "./src",                   // Base directory to resolve non-relative imports
+    "paths": {
+      "@/*": ["./*"]                      // Alias for cleaner imports
+    }
+  },
+  "include": ["src"],                     // Include all source files in the 'src' directory
+  "exclude": ["node_modules", "dist"]     // Exclude node_modules and dist directories
+}
